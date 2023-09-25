@@ -8,7 +8,16 @@
 - `O(1)` does the same operation every time
 - `O(logn)` - base of 2
 - `O(n)` grows linearly
+- `O(nlogn)` -
 
-### Algorithms
+1. Growth with respect to the input
+2. Constants are dropped
+3. Worst case is usually the way we measure
+
+### Arrays
 
 - `const a = []` is not an array
+- Array is contiguous memory space
+- `ArrayBuffer` is a contiguous piece of memory, then you can create views into the array (eg. `Uint8Array(array)`)
+- You cannot grow an array (i.e insert/overwrite data that isn't within the array length)
+- BigO of accessing an array is O(n) (given the array length is a constant - 1 to infinite - no matter how big the array is, we do a constant amount of things - one thing)
